@@ -27,10 +27,11 @@ def liquid_distribution(liters, bottles):
             # we can pass to combination algo only if we have a odd if litter is odd or if litter is even
             result = calculator.getCombinationSum(liters, bottles)
             # set min size
-            minValue = len(result[0])
-            for i in range(len(result)):
-                if (len(result[i]) < minValue or minValue == -1):
-                    minValue = len(result[i])
+            if result:
+                minValue = len(result[0])
+                for i in range(len(result)):
+                    if (len(result[i]) < minValue or minValue == -1):
+                        minValue = len(result[i])
     return minValue
 
 
@@ -91,6 +92,9 @@ def testLiquid():
     assert liquid_distribution(0, [1, 2, 7]) == -1, "Should be -1"
     # negative liter test
     assert liquid_distribution(-1, [1, 2, 7]) == -1, "Should be -1"
+    assert liquid_distribution(5, [2, 3, 4]) == 2, "Should be -1"
+    assert liquid_distribution(5, [3, 4]) == -1, "Should be -1"
+    assert liquid_distribution(5, [6, 7, 8]) == -1, "Should be -1"
     print("Test passed")
 
 
