@@ -29,11 +29,6 @@ If there's no way to distribute the liquid as described above, return -1 instead
 
 The first approach to understanding the problem was hand-drawing the case of the function and the analysis of the first limitations or issues.
 
-### Notes
-<img src="notes.jpg"
-     alt="Rubio Haro Challenge notes"
-     style="float: left; margin-right: 10px; height: 200px" />
-
 From this Analysis looks like a recursive function
 ### Doubts 
 Empty set?
