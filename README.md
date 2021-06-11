@@ -1,4 +1,4 @@
-# Apli Challenge
+# Toxic Liquid
 ## Function Description
 Write a function liquid_distribution that distributes a hazardous liquid between special bottles.
 The function accepts two parameters:
